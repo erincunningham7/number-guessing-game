@@ -16,3 +16,6 @@ guess = ""
 while guess != answer:
     user_input = input(f"Guess a number between 1 and {guess_range} : \n")
     guess = int(user_input)
+
+# If the code executes past the while loop the user has guessed the correct answer
+print('Congratulations! You guessed the correct number. You win!')
