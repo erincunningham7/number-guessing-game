@@ -1,5 +1,8 @@
 import random
 
+# Keep track of the players number of guesses allowed
+guesses_allowed = 10
+
 # Generate a random number between 1 and 50
 guess_range = 50
 answer = random.randint(1, guess_range)
@@ -19,3 +22,6 @@ while guess != answer:
 
 # If the code executes past the while loop the user has guessed the correct answer
 print('Congratulations! You guessed the correct number. You win!')
+
+# Add a limited number of guesses
+#
