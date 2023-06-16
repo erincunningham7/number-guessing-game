@@ -23,6 +23,9 @@ for i in range(guesses_allowed):
     if guess == answer:
         print('Congratulations! You guessed the correct number. You win!')
         break
+    # Check if the player has reached their number of guesses limit and end the game if so
+    if (i == guesses_allowed -1):
+        print('Sorry, you have run out of guesses. You lose!')
 
 # If the code executes past the while loop the user has guessed the correct answer
 print('Congratulations! You guessed the correct number. You win!')
