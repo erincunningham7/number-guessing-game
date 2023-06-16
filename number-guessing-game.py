@@ -30,5 +30,3 @@ for i in range(guesses_allowed):
 # If the code executes past the while loop the user has guessed the correct answer
 print('Congratulations! You guessed the correct number. You win!')
 
-# Add a limited number of guesses
-#
