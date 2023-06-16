@@ -19,11 +19,10 @@ guess = int(user_input)
 for i in range(guesses_allowed):
     user_input = input(f"Guess a number between 1 and {guess_range} : \n")
     guess = int(user_input)
-# # While the user has not guessed the correct answer re ask them to guess again
-# guess = ""
-# while guess != answer:
-#     user_input = input(f"Guess a number between 1 and {guess_range} : \n")
-#     guess = int(user_input)
+    # If the guess is correct break out of the loop
+    if guess == answer:
+        print('Congratulations! You guessed the correct number. You win!')
+        break
 
 # If the code executes past the while loop the user has guessed the correct answer
 print('Congratulations! You guessed the correct number. You win!')
