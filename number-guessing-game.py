@@ -23,6 +23,11 @@ for i in range(guesses_allowed):
     if guess == answer:
         print('Congratulations! You guessed the correct number. You win!')
         break
+    # Add hints
+    elif guess < answer:
+        print('The number is higher.')
+    else:
+        print('The number is lower.')
     # Check if the player has reached their number of guesses limit and end the game if so
     if (i == guesses_allowed -1):
         print('Sorry, you have run out of guesses. You lose!')
