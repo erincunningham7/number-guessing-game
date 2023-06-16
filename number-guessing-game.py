@@ -42,5 +42,5 @@ for i in range(guesses_allowed):
         print("You're freezing.")
 
 # If the code executes past the while loop the user has guessed the correct answer
-print('Congratulations! You guessed the correct number. You win!')
+# print('Congratulations! You guessed the correct number. You win!')
 
