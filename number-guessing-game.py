@@ -1,5 +1,6 @@
 
 import random
+from colorama import Fore, Back, Style
 
 
 # Keep track of the players number of guesses allowed
