@@ -14,7 +14,7 @@ print('Welcome to the number guessing game!')
 print('')
 # Add difficulty level
 while True:
-    level = input("Select difficulty level (easy, medium, hard): ")
+    level = input("Select difficulty level (easy, medium, hard): \n")
     # Add validation incase of invalid response
     if level in ["easy", "medium", "hard"]:
         break
