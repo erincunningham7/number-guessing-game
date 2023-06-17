@@ -14,7 +14,11 @@ print('')
 # Add difficulty level
 while True:
     level = input("Select difficulty level (easy, medium, hard): \n").lower
-
+    # Add validation incase of invalid response
+    if level in ["easy", "medium", "hard"]:
+        break
+    else:
+        print("Invalid input. Please select either 'easy', 'medium', or 'hard'.")
 
 # user_input = input(f"Guess a number between 1 and {guess_range} : \n")
 # guess = int(user_input)
