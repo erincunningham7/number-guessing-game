@@ -33,8 +33,6 @@ while True:
 
         answer = random.randint(1, guess_range)
 
-# user_input = input(f"Guess a number between 1 and {guess_range} : \n")
-# guess = int(user_input)
 
 # Compare the users input to the random number generated and check if it matches
 # If statement that only repeats a limited amount of guesses
