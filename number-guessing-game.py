@@ -1,6 +1,7 @@
 
 import random
 
+
 # Keep track of the players number of guesses allowed
 guesses_allowed = 10
 
@@ -13,12 +14,24 @@ print('Welcome to the number guessing game!')
 print('')
 # Add difficulty level
 while True:
-    level = input("Select difficulty level (easy, medium, hard): \n").lower
+    level = input("Select difficulty level (easy, medium, hard): ")
     # Add validation incase of invalid response
     if level in ["easy", "medium", "hard"]:
         break
     else:
         print("Invalid input. Please select either 'easy', 'medium', or 'hard'.")
+        # Use difficulty level to determine guess limit
+        if level == "easy":
+            guess_range = 50
+            guesses_allowed = 20
+        elif level == "medium":
+            guess_range = 100
+            guesses_allowed = 15
+        else:
+            guess_range = 150
+            guesses_allowed = 10
+
+        answer = random.randint(1, guess_range)
 
 # user_input = input(f"Guess a number between 1 and {guess_range} : \n")
 # guess = int(user_input)
@@ -49,7 +62,4 @@ for i in range(guesses_allowed):
         print("You're cold.")
     else:
         print("You're freezing.")
-
-# If the code executes past the while loop the user has guessed the correct answer
-# print('Congratulations! You guessed the correct number. You win!')
 
