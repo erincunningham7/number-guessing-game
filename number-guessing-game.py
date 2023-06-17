@@ -11,7 +11,7 @@ guess_range = 50
 answer = random.randint(1, guess_range)
 
 # Start the game and ask the player to guess the number
-print('Welcome to the number guessing game!')
+print(Fore.LIGHTMAGENTA_EX + 'Welcome to the number guessing game!')
 print('')
 # Add difficulty level
 while True:
@@ -42,7 +42,7 @@ for i in range(guesses_allowed):
     guess = int(user_input)
     # If the guess is correct break out of the loop
     if guess == answer:
-        print('Congratulations! You guessed the correct number. You win!')
+        print(Fore.LIGHTBLUE_EX + 'Congratulations! You guessed the correct number. You win!')
         break
     # Add hints
     elif guess < answer:
