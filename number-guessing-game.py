@@ -11,8 +11,13 @@ answer = random.randint(1, guess_range)
 # Start the game and ask the player to guess the number
 print('Welcome to the number guessing game!')
 print('')
-user_input = input(f"Guess a number between 1 and {guess_range} : \n")
-guess = int(user_input)
+# Add difficulty level
+while True:
+    level = input("Select difficulty level (easy, medium, hard): \n").lower
+
+
+# user_input = input(f"Guess a number between 1 and {guess_range} : \n")
+# guess = int(user_input)
 
 # Compare the users input to the random number generated and check if it matches
 # If statement that only repeats a limited amount of guesses
